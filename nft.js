@@ -1,0 +1,1 @@
+alert("NOTE: This is just a customized mockup-page of an NFT website created by Efe, and so any link clicked on this webpage directs you to the main NFT website");

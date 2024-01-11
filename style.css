@@ -1,0 +1,327 @@
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Pacifico&family=Poppins&display=swap');
+
+html{
+    --buttoncolor: blue;
+    --background: lightgrey;
+}
+
+body{
+    font-family: "poppins";
+    background-color: var(--background);
+    color: black;
+}
+
+/* MAIN BODY */
+.main-body{
+    background-image: url(image/Sky.jpg);
+    background-size: cover;
+    min-height: 400vh;
+}
+
+
+/* NAV STYLING */
+.nav{
+  display: flex; 
+  justify-content: center;
+  align-items: center ;
+}
+
+.nav ul{
+    margin-left: 30%;    
+}
+
+.navlinks li{
+    display: inline-block;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.navlinks li a{
+    color: black;
+}
+
+.nav-button{
+    background-color: dimgray;
+    padding: 8px 20px;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* SECTION1 STYLING */
+.section1{
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 a{
+    color: var(--buttoncolor);
+    border: 1px solid var(--buttoncolor);
+    padding: 2px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.section1 a:hover,
+.section2 a:hover{
+    background-color: #1b1bff;
+    color: white;
+}
+
+.section1 .collectibles{
+    color: var(--buttoncolor) ;
+    font-size: 1.9rem;
+}
+
+.section1 p:first-of-type{
+    font-size: 2rem;
+}
+
+.section1 p:last-of-type{
+    font-size: 1.1rem;
+}
+
+.section-img-container img{
+    width:80%;
+    margin-left: 6%;
+    margin-top: 10%;
+    border: 1px solid blue;
+    padding: 10px 10px 10px 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.section-img-container {
+    margin-right: 10px;
+    border: 1px solid blue;
+    padding: 10px 20px 10px 30px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.9);
+}
+
+.section-img-container:hover{
+    position: relative;
+    bottom: 5px;
+}
+
+.section-img-container a{
+    font-size: 12px;
+    background-color: blue;
+    color: white;
+    margin-top: -5px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+/* SECTION2 STYLING */
+.section2{
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+.section2-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 a{
+    margin-right: 10px;
+    margin-top: 5%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 2px 50px;
+    background-color: dimgray;
+    padding: 10px 46px 10px 46px;
+}
+
+.section2Header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3Header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.section2card{
+    width: 18%;
+    height: 300px;
+}
+
+/* NFT CONTAINER STYLING */
+.NFT-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.NFT-name{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.NFT-pricetag{
+    font-size: 13.5px;
+    color: black;
+}
+
+.NFT-container a{
+    font-size: 12px;
+    background-color: blue;
+    color: white;
+    margin-top: -5px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.NFT-container2 a{
+font-weight:lighter;
+font-size: 12px;
+background-color: dimgray;
+color: white;
+margin-left: 50%;
+padding: 3px 10px 3px 10px;
+border-radius: 30px;
+border: none;
+}
+
+.NFT-container2 a:hover{
+    background-color: dimgray;
+    color: white;
+}
+
+
+/* ME-NFT STYLING */
+.me{
+    line-height:4px ;
+}
+
+.me img{
+    width: 70px;
+    border-radius: 50%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        background-image: url(image/Sky\ Blur.jpg);
+        background-size: contain;
+        min-height: auto;
+        color: white;
+    }
+
+    .main-body{
+        background-image: url(image/Sky\ Blur.jpg);
+        background-size: contain;
+        min-height: auto;
+        color: white;
+    }
+
+    .nav{
+        display: block;
+    }
+
+    .nav ul{
+        margin: 0;
+        display: flex;
+        gap:10%;
+    }
+
+    .nav-button{
+        margin-top:20px;
+    }
+
+    .nav li{
+        margin: 0;
+    }
+
+    .nav li a{
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .nav li a:hover{
+        color: #2b81f1;
+        text-decoration: underline;
+    }
+    
+    
+    .section2Header,
+    .section3Header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-right:70px;
+        margin-bottom: 100px;
+    }
+
+    .section-img-container{
+        margin-top: 30px;
+        width:150px;
+        color: black;
+    }
+
+    .section-img-container img{
+        margin: 0;
+        width: 140px;
+        height: 150px;
+    }
+    
+    .section1{
+        margin-top: 60px;
+        text-align: justify;
+        display: block;
+        margin-left: 3%;
+    }
+    
+
+    .section1 .collectibles{
+        color:lightskyblue;
+        text-shadow: 2px 2px black;
+    }
+
+    .section2-body{
+        margin-top: 50px;
+        display: block;
+    }
+
+    .section2-body a{
+        padding:  10px 90px 10px 90px;
+    }
+
+    .section1 p:last-of-type{
+        width: 80%;
+    }
+
+    .me{
+        margin-bottom: 30%;
+    }
+
+    .you{
+        display: none;
+    }
+
+    .NFT-container2 a{
+        margin-left: 100%;
+    }
+}
+
