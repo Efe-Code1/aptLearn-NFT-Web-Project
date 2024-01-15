@@ -2,14 +2,13 @@
 
 html{
     --buttoncolor: blue;
-    --background: lightgrey;
+     --background: lightgrey;
 }
 
 body{
     font-family: "poppins";
     background-image: url(image/Sky.jpg);
     background-size: cover;
-    min-height: 320vh;
     color: black;
 }
 
@@ -45,7 +44,6 @@ body{
     padding: 8px 20px;
     border: none;
     font-size: 1.2rem;
-    margin-left: 5%;
     border-radius: 20px;
     color: white;
     cursor: pointer;
@@ -133,7 +131,6 @@ body{
 
 .section2 a{
     margin-right: 10px;
-    margin-top: 5%;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -141,6 +138,10 @@ body{
     border-radius: 2px 50px;
     background-color: dimgray;
     padding: 10px 46px 10px 46px;
+}
+
+.popular{
+    margin-top: 70px;
 }
 
 .section2Header{
@@ -201,7 +202,7 @@ body{
 }
 
 .section5{
-    background-image: linear-gradient(to right, lightskyblue, lightgrey);
+    background-image: linear-gradient(to right, #ff0037, lightblue);
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 10px;
@@ -286,18 +287,15 @@ body{
     margin-top: 30%;
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1000px) {
     body{
         font-family: "poppins";
         background-image: url(image/Sky\ Blur.jpg);
         background-size: auto;
         background-position: left;
-        min-height: 320vh;
         color: white;
-    }
-
-    .main-body{
         width: fit-content;
+        height: fit-content;
     }
 
     .nav .navlinks{
@@ -349,17 +347,12 @@ body{
     .section3Header{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* margin-bottom: 10px; */
     }
 
     .section-img-container{
         margin-top: 30px;
         width:180px;
         color: black;
-    }
-
-    .section2card{
-       gap: 5px;
     }
 
     .section1 a{
@@ -380,10 +373,6 @@ body{
         text-align: center;
     }
 
-    .section1 p:last-of-type{
-        width: 80%;
-    }
-
     .section4Header{
         color: black;
     }
@@ -393,8 +382,8 @@ body{
         grid-template-columns: 1fr 1fr;
     }
 
-    .NFT-container2 a{
-        margin-left: 100%;
+    .NFT-categories{
+        margin-left: 80px;
     }
 
     .footer{
