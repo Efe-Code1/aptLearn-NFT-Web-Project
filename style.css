@@ -15,19 +15,23 @@ body{
 .main-body{
     background-image: url(image/Sky.jpg);
     background-size: cover;
-    min-height: 400vh;
+    min-height: 320vh;
 }
 
 
 /* NAV STYLING */
 .nav{
   display: flex; 
-  justify-content: center;
   align-items: center ;
+  padding: 20px;
 }
 
-.nav ul{
-    margin-left: 30%;    
+.nav .navlinks{
+    margin-left: auto;    
+}
+
+.navlinks ul{
+    margin-left: 200px;
 }
 
 .navlinks li{
@@ -51,12 +55,15 @@ body{
     cursor: pointer;
 }
 
+.barIcon{
+    display: none;
+}
 
 /* SECTION1 STYLING */
 .section1{
     display: flex;
     gap: 80px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 20px;
     align-items: center;
     justify-content: center;
@@ -92,12 +99,6 @@ body{
 .section-img-container img{
     width:80%;
     margin-left: 6%;
-    margin-top: 10%;
-    border: 1px solid blue;
-    padding: 10px 10px 10px 10px;
-    background-color: lightgray;
-    border-radius: 10px;
-    box-sizing: border-box;
 }
 
 .section-img-container {
@@ -118,7 +119,6 @@ body{
     font-size: 12px;
     background-color: blue;
     color: white;
-    margin-top: -5px;
     padding: 3px 10px 3px 10px;
     border-radius: 30px;
     border: none;
@@ -127,7 +127,7 @@ body{
 /* SECTION2 STYLING */
 .section2{
     margin-left:20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .section2-body{
@@ -152,17 +152,89 @@ body{
     justify-content: space-between;
 }
 
-.section3Header{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
 
 .section2card{
     width: 18%;
     height: 300px;
 }
+
+/* SECTION3 STYLING */
+.section3Header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* SECTION4 STYLING */
+.section4{
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.section4Header{
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    padding: 20px 15px;
+    background-image: linear-gradient(to right, lightblue, transparent );
+}
+
+.section4creators{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.section4creator{
+    width: 180px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightskyblue;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.section4creator img{
+    width: 80px;
+    height: 80px;
+    margin-left: -20px;
+}
+
+.section5{
+    background-image: linear-gradient(to right, lightskyblue, lightgrey);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    color: black;
+}
+
+.section5Header{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section5Header a{
+    margin-right: 25px;
+    margin-top: 20px;
+    color: darkblue;
+}
+
+.enclosed{
+    line-height: 5px;
+}
+
+.footer{
+    line-height: 5px;
+    text-align: center;
+    color: white;
+}
+
 
 /* NFT CONTAINER STYLING */
 .NFT-container{
@@ -178,63 +250,75 @@ body{
 .NFT-pricetag{
     font-size: 13.5px;
     color: black;
+    margin-top: 10px;
 }
 
 .NFT-container a{
     font-size: 12px;
     background-color: blue;
     color: white;
-    margin-top: -5px;
     padding: 3px 10px 3px 10px;
     border-radius: 30px;
     border: none;
 }
 
-.NFT-container2 a{
-font-weight:lighter;
-font-size: 12px;
-background-color: dimgray;
-color: white;
-margin-left: 50%;
-padding: 3px 10px 3px 10px;
-border-radius: 30px;
-border: none;
+
+.NFT-categories{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.NFT-container2 a:hover{
-    background-color: dimgray;
-    color: white;
+.image-categories{
+    display: grid;
+    grid-template-columns: repeat(2, 200px) ;
 }
 
+.image-categories img{
+    width: 60%;
+}
 
 /* ME-NFT STYLING */
-.me{
-    line-height:4px ;
+.creator{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    left: 40%;
 }
 
-.me img{
-    width: 70px;
-    border-radius: 50%;
-    height: 50px;
-    margin-top: 10px;
+.shift{
+    margin-right: -80%;
+    margin-top: 30%;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1100px) {
     body{
-        background-image: url(image/Sky\ Blur.jpg);
-        background-size: contain;
-        min-height: auto;
-        color: white;
+
     }
 
     .main-body{
         background-image: url(image/Sky\ Blur.jpg);
         background-size: contain;
-        min-height: auto;
+        min-height: 340vh;
         color: white;
+        width: fit-content;
     }
 
-    .nav{
+    .nav .navlinks{
+        display: none;
+    }
+
+    .barIcon{
+        display: block;
+        margin-left: auto;
+        font-size: x-large;
+    }
+
+    .section1{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* .nav{
         display: block;
     }
 
@@ -261,38 +345,30 @@ border: none;
     .nav li a:hover{
         color: #2b81f1;
         text-decoration: underline;
-    }
+    } */
     
     
     .section2Header,
     .section3Header{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        margin-right:70px;
-        margin-bottom: 100px;
+        /* margin-bottom: 10px; */
     }
 
     .section-img-container{
         margin-top: 30px;
-        width:150px;
+        width:180px;
         color: black;
     }
 
-    .section-img-container img{
-        margin: 0;
-        width: 140px;
-        height: 150px;
+    .section2card{
+       gap: 5px;
     }
-    
-    .section1{
-        margin-top: 60px;
-        text-align: justify;
-        display: block;
-        margin-left: 3%;
+
+    .section1 a{
+        background-color: #1b1bff;
+        color: white;
     }
-    
 
     .section1 .collectibles{
         color:lightskyblue;
@@ -300,24 +376,15 @@ border: none;
     }
 
     .section2-body{
-        margin-top: 50px;
-        display: block;
+        flex-direction: column;
     }
 
     .section2-body a{
-        padding:  10px 90px 10px 90px;
+        text-align: center;
     }
 
     .section1 p:last-of-type{
         width: 80%;
-    }
-
-    .me{
-        margin-bottom: 30%;
-    }
-
-    .you{
-        display: none;
     }
 
     .NFT-container2 a{
