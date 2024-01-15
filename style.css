@@ -290,9 +290,14 @@ body{
     body{
         font-family: "poppins";
         background-image: url(image/Sky\ Blur.jpg);
-        background-size: contain;
+        background-size: auto;
+        background-position: left;
         min-height: 320vh;
         color: white;
+    }
+
+    .main-body{
+        width: fit-content;
     }
 
     .nav .navlinks{
@@ -381,6 +386,11 @@ body{
 
     .section4Header{
         color: black;
+    }
+
+    .section4creators{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .NFT-container2 a{
