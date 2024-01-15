@@ -7,17 +7,13 @@ html{
 
 body{
     font-family: "poppins";
-    background-color: var(--background);
+    background-image: url(image/Sky.jpg);
+    background-size: cover;
+    min-height: 320vh;
     color: black;
 }
 
 /* MAIN BODY */
-.main-body{
-    background-image: url(image/Sky.jpg);
-    background-size: cover;
-    min-height: 320vh;
-}
-
 
 /* NAV STYLING */
 .nav{
@@ -292,15 +288,11 @@ body{
 
 @media screen and (max-width:1100px) {
     body{
-
-    }
-
-    .main-body{
+        font-family: "poppins";
         background-image: url(image/Sky\ Blur.jpg);
         background-size: contain;
-        min-height: 340vh;
+        min-height: 320vh;
         color: white;
-        width: fit-content;
     }
 
     .nav .navlinks{
@@ -387,8 +379,16 @@ body{
         width: 80%;
     }
 
+    .section4Header{
+        color: black;
+    }
+
     .NFT-container2 a{
         margin-left: 100%;
+    }
+
+    .footer{
+        line-height: 30px;
     }
 }
 
