@@ -335,13 +335,14 @@ body{
     .nav ul li{
         padding-top: 15px;
         display: block;
-        font-size: larger;
+        font-size: x-large;
         margin-left: auto;
         margin-bottom: 10px
     }
 
     .nav-button{
-        font-size: larger;
+        background-color: #1b1bff;
+        font-size: x-large;
         margin-top: 20px;
         margin-right: 120px;
         margin-left: 0;
