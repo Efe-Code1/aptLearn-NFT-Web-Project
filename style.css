@@ -143,7 +143,7 @@ body{
     font-weight: bold;
     border: 2px solid black;
     border-radius: 2px 50px;
-    background-color: dimgray;
+    background-color: #1b1bff;
     padding: 10px 46px 10px 46px;
 }
 
@@ -156,7 +156,6 @@ body{
     overflow: scroll;
     justify-content: center;
 }
-
 
 .section2card{
     min-width: 280px;
@@ -328,16 +327,16 @@ body{
         padding-top: 10%;
         position: absolute;
         top: 0;
-        width: 100%;
+        width: 80%;
         right: 100%;
-        height: 4000px ;
-        background-image: url(image/UFO\ Sketch.jpg);
-        background-position: center;
+        z-index: 1;
+        background-image: url(image/the\ dark.jpg);
+        background-position: top;
         /* background-size: cover; */
     }
 
     .navlinkShow{
-        right: -100%;
+        right: -50%;
     }
 
     .nav ul li{
@@ -368,6 +367,10 @@ body{
 
 
     .bi-caret-right-fill{
+        display: none;
+    }
+
+    .formobileonly{
         display: none;
     }
 
