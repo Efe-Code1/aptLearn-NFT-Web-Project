@@ -127,7 +127,9 @@ body{
 .section2{
     margin-left:20px;
     margin-top: 40px;
+    position: relative;
 }
+
 
 .section2-body{
     display: flex;
@@ -151,19 +153,25 @@ body{
 
 .section2Header{
     display: flex;
-    justify-content: space-between;
+    overflow: scroll;
+    justify-content: center;
 }
 
 
 .section2card{
-    width: 18%;
-    height: 300px;
+    min-width: 280px;
+    /* width: 18%; */
+    /* height: 300px; */
+}
+
+.section2Header::-webkit-scrollbar{
+    display: none;
 }
 
 /* SECTION3 STYLING */
 .section3Header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -207,7 +215,7 @@ body{
 }
 
 .section5{
-    background-image: linear-gradient(to right, #ff0037, lightblue);
+    background-image: linear-gradient(to top , transparent, lightblue);
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 10px;
@@ -322,7 +330,7 @@ body{
         top: 0;
         width: 100%;
         right: 100%;
-        height: 200%;
+        height: 4000px ;
         background-image: url(image/UFO\ Sketch.jpg);
         background-position: center;
         /* background-size: cover; */
@@ -354,6 +362,14 @@ body{
         text-decoration: none;
     }
 
+    .bi-caret-left-fill{
+        display: none;
+    }
+
+
+    .bi-caret-right-fill{
+        display: none;
+    }
 
     /* .barIcon{
         display: block;
@@ -382,6 +398,7 @@ body{
     
     .section2Header,
     .section3Header{
+        overflow: hidden;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -425,7 +442,7 @@ body{
 
     .footer{
         line-height: 30px;
-        font-size: x-small;
+        font-size: small;
     }
 }
 
