@@ -321,8 +321,10 @@ body{
         position: absolute;
         top: 0;
         right: 100%;
-        height: 520%;
-        background-color: #1b1bff;
+        height: 200%;
+        background-image: url(image/Airplane.jpg);
+        background-position: center;
+        background-size: 990px;
     }
 
     .navlinkShow{
