@@ -10,7 +10,7 @@
 
 <body>
     <nav class="nav">
-        <h1>aptLearn NFT Project</h1>
+        <h1 class="title">aptLearn NFT Project</h1>
         <span class="navlinks">
             <i class="bi bi-x-lg closeBar" onclick="closeSideBar()"></i>            
             <ul>
@@ -22,11 +22,11 @@
                 <button class="nav-button">Contact</button>
             </ul>
         </span>  
-        <i class="bi bi-list barIcon" onclick="sideBar()"></i>  
     </nav>    
 
     <article class="section1">
         <section>
+            <i class="bi bi-list barIcon" onclick="sideBar()"></i> 
             <h2 class="collectibles">Collectible NFT's</h2>
             <p>Find Trending NFT's Auctions <br>& Buy Timeless Artworks</p>
             <p>A much simpler NFT market that offers extraordinary 
@@ -49,15 +49,19 @@
 
     <article class="section2">
             <i class="bi bi-caret-left-fill" style="font-size: xx-large;
-            left: 0; top: 50%; position: absolute; cursor: pointer; color: mediumblue;">
+            left: 0; top: 60%; position: absolute; cursor: pointer; 
+            color: mediumblue;" onclick="scrollBarLeft()">
             </i>
             <i class="bi bi-caret-right-fill" style="font-size: xx-large;
-            right: 0; top: 50%; position: absolute; cursor: pointer; color: mediumblue;">
+            right: 0; top: 60%; position: absolute; cursor: pointer; 
+            color: mediumblue;" onclick="scrollBarRight()">
             </i>
         <div class="section2-body">
             <div>
                 <h2>Trending NFT's of this season</h2>
-                <p>NFT Card will give you access to special airdrops</p>
+                <p>NFT Card will give you access to special airdrops.
+                    Below are the most popular NFT's trending for this season
+                </p>
             </div>
             <a href="https://cryptonews.com/news/best-nfts.htm" class="popular">Popular NFT's</a>
         </div>
@@ -287,7 +291,7 @@
 
     <article class="section5">
         <div class="section5Header">
-            <h2>NFT Categories</h2>
+            <h2>Other NFT Categories</h2>
             <a href="https://opensea.io/rankings">Load More</a>
         </div>
         <div class="NFT-categories">

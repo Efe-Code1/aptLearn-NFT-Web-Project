@@ -109,10 +109,6 @@ body{
     box-shadow: 0px 4px 16px rgba(0,0,0,0.9);
 }
 
-.section-img-container:hover{
-    position: relative;
-    bottom: 5px;
-}
 
 .section-img-container a{
     font-size: 12px;
@@ -155,6 +151,7 @@ body{
     display: flex;
     overflow: scroll;
     justify-content: center;
+    scroll-behavior: smooth;
 }
 
 .section2card{
@@ -311,7 +308,7 @@ body{
 
     .barIcon{
         display: block;
-        margin-left: auto;
+        margin-top: -100px;
         font-size: xx-large;
     }
 
@@ -323,20 +320,25 @@ body{
         right: 25px;
     }
 
+    .title{
+        margin-left: auto;
+    }
+
     .navlinks{
         padding-top: 10%;
         position: absolute;
         top: 0;
-        width: 80%;
+        width: 60%;
         right: 100%;
+        height: 60%;
         z-index: 1;
         background-image: url(image/the\ dark.jpg);
         background-position: top;
-        /* background-size: cover; */
+        transition: 0.5s ease;
     }
 
     .navlinkShow{
-        right: -50%;
+        right: 40%;
     }
 
     .nav ul li{
@@ -365,7 +367,6 @@ body{
         display: none;
     }
 
-
     .bi-caret-right-fill{
         display: none;
     }
@@ -373,26 +374,16 @@ body{
     .formobileonly{
         display: none;
     }
+    
 
-    /* .barIcon{
-        display: block;
-        margin-left: auto;
-        font-size: xx-large;
-    }
-
-    .nav .navlinks{
+    /* .nav .navlinks{
         position: absolute;
         top: 0;
         right: 0;
         height: 100%;
         background-color: #1b1bff;
-    }
-
-    .nav ul li{
-        display: block;
-        margin-left: auto;
-        margin-bottom: 20px
     } */
+
 
     .section1{
         flex-direction: column;
@@ -401,7 +392,7 @@ body{
     
     .section2Header,
     .section3Header{
-        overflow: hidden;
+        /* overflow: hidden; */
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -410,6 +401,11 @@ body{
         margin-top: 30px;
         width:180px;
         color: black;
+    }
+
+    .section-img-container:hover{
+        position: relative;
+        bottom: 5px;
     }
 
     .section1 a{
@@ -422,6 +418,14 @@ body{
         text-shadow: 2px 2px black;
     }
 
+    .section2-body h2{
+        font-size: x-large;
+    }
+
+    .section2-body p{
+        font-size: larger;
+    }
+    
     .section2-body{
         flex-direction: column;
     }
@@ -437,6 +441,10 @@ body{
     .section4creators{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .popular{
+        margin-top: 10px;
     }
 
     .NFT-categories{

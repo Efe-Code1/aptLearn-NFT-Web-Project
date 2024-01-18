@@ -1,23 +1,25 @@
 // alert("NOTE: This is just a customized mockup-page of an NFT website created by Efe, and so any link clicked on this webpage directs you to the main NFT website");
 
 // const sideBar = () => {
-    function sideBar() {
-    // console.log(event.target);
+
+function sideBar() {
     const navlink = document.querySelector(".navlinks");
     navlink.classList.add("navlinkShow");
 };
 
-    function closeSideBar() {
-    // console.log(event.target);
+function closeSideBar() {
     const navlink = document.querySelector(".navlinks");
     navlink.classList.remove("navlinkShow");
 };
 
-// function sideBar() {
-//     const yes =  document.getElementsByClassName("navlinks");
-//     if (yes.className === "navlinks") {
-//         yes.className += "navlinksShown";
-//     } else{
-//         yes.className = "navlinks;"
-//     }
-// }
+function scrollBarLeft() {
+    const move = document.querySelector(".section2Header");
+    move.scrollBy(-500, 0);
+};
+
+function scrollBarRight() {
+    // document.querySelector(".section2Header").scrollBy(500, 0);
+    const move = document.querySelector(".section2Header");
+    move.scrollBy(500, 0);
+};
+
