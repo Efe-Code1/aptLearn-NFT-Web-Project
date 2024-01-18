@@ -7,7 +7,7 @@ html{
 
 body{
     font-family: "poppins";
-    background-image: url(image/Sky.jpg);
+    background-image: url(/image/Sky.jpg);
     background-size: cover;
     color: black;
 }
@@ -299,11 +299,15 @@ body{
 @media screen and (max-width:1000px) {
     body{
         font-family: "poppins";
-        background-image: url(image/Sky\ Blur.jpg);
+        background-image: url(/image/Sky\ Blur.jpg);
         background-size: auto;
         background-position: left;
         color: white;
         width: fit-content;
+    }
+    
+    .title{
+        margin-left: auto;
     }
 
     .barIcon{
@@ -320,10 +324,6 @@ body{
         right: 25px;
     }
 
-    .title{
-        margin-left: auto;
-    }
-
     .navlinks{
         padding-top: 10%;
         position: absolute;
@@ -332,7 +332,7 @@ body{
         right: 100%;
         height: 60%;
         z-index: 1;
-        background-image: url(image/the\ dark.jpg);
+        background-image: url(/image/the\ dark.jpg);
         background-position: top;
         transition: 0.5s ease;
     }
@@ -388,6 +388,11 @@ body{
     .section1{
         flex-direction: column;
         gap: 10px;
+    }
+
+    
+    .section1 p:last-of-type{
+        font-size: larger;
     }
     
     .section2Header,
