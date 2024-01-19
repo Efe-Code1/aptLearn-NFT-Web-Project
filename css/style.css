@@ -296,7 +296,39 @@ body{
     margin-top: 30%;
 }
 
-@media screen and (max-width:1000px) {
+.footer{
+    text-align: justify;
+    line-height: 30px;
+    font-size: larger;
+    color: white;
+    padding: 30px;
+    background-image: url(/image/under-water.jpg);
+    background-position: center;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    background-color: #1b1bff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.endnote h3{
+    color: orange;
+}
+
+.footer-img{
+    margin-left: 200px;
+    display: flex;
+}
+
+.lupine{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:800px) {
     body{
         font-family: "poppins";
         background-image: url(/image/Sky\ Blur.jpg);
@@ -457,8 +489,26 @@ body{
     }
 
     .footer{
+        text-align: justify;
         line-height: 30px;
-        font-size: small;
+        font-size: larger;
+        color: white;
     }
+
+    .lupine{
+        flex-direction: column;
+    }
+    
+    .footer-img{
+        margin: 0;
+    }
+
+    .wolf{
+        width: 50%;
+    }
+
+
 }
+
+
 

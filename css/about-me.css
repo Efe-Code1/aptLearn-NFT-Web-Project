@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Pacifico&family=Poppins&display=swap');
 
 body{
-    background-image: url(/image/UFO\ Sketch.jpg);
-    background-position: center;
-    background-size: auto;
+    background-image: url(/image/the\ dark.jpg);
+    background-size: cover;
     width:100%;
     margin: 0;
     font-family: 'poppins';
@@ -46,14 +45,20 @@ body{
     display: grid;
 }
 .two-column-wrapper{
-    display:grid;
-    margin-top: 30px;
-    grid-template-columns: 1fr 1fr;
+    display:flex;
+    justify-content: space-between;
+
 }
 
+.mobile img{
+    display: none;
+}
+
+
 .profile-image-wrapper img{
-    width:100%;
-    box-sizing: border-box;
+    width:80%;
+    margin-left: 40px;
+    border-radius: 340px;
     box-shadow: 3px 2px 5px 2px;
 }
 
@@ -63,7 +68,8 @@ body{
 }
 
 .profile-content-wrapper{
-    padding:30px;
+    margin-left:40px;
+    margin-right: 40px;
     line-height: 30px;
     text-align: justify;
     color: white;
@@ -72,14 +78,17 @@ body{
 
 .profile-content-wrapper h1{
     color:white;
+    font-size: x-large;
     text-transform: uppercase;
 }
 
 
 @media screen and (max-width: 1000px){
     body{
-        background-position: top;
         font-size: medium;
+        background-image: url(/image/the\ dark.jpg);
+        background-size: auto;
+        background-position: top;
     }
 
     .two-column-wrapper{
@@ -91,15 +100,26 @@ body{
         padding: 0;
     }
 
+    .mobile img{
+        display: block;
+        width:100%;
+        margin-top: 20px;
+        margin-left: -10px;
+        border-radius: 150px;
+    }
+    
+    .mobile{
+        padding: -50px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .profile-content-wrapper{
         font-size: medium;
-        padding:15px;
+        margin: 20px;
     }
 
     .profile-image-wrapper img{
-        width:95%;
-        background-color: lightgray;
-        box-shadow: 4px 2px 5px 2px;
-    }
-
+        display: none;
 }
