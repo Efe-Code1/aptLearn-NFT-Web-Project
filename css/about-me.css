@@ -85,7 +85,7 @@ body{
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     body{
         font-size: 15px;
         background-image: url(/image/the\ dark.jpg);
@@ -98,19 +98,16 @@ body{
     }
 
     .profile-content-wrapper{
-        line-height: 30px;
+        line-height: 2rem;
         text-align: justify;
         color: white;
-        font-size: medium;
-        font-size: medium;
+        font-size: 12px;
         margin: 20px;
-        /* display: inline; */
     }
 
     .rightside{
         margin: 0;
     }
-
 
     .smallscreen{
         display: block;
