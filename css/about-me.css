@@ -87,7 +87,7 @@ body{
 
 @media screen and (max-width: 800px){
     body{
-        font-size: medium;
+        font-size: 15px;
         background-image: url(/image/the\ dark.jpg);
         background-size: auto;
         background-position: top;
