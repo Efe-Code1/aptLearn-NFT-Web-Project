@@ -319,7 +319,7 @@ body{
 }
 
 .footer-img{
-    margin-left: 200px;
+    margin-left: 50px;
     display: flex;
 }
 
@@ -346,6 +346,7 @@ body{
         display: block;
         margin-top: -100px;
         font-size: xx-large;
+        cursor: pointer;
     }
 
     .closeBar{
@@ -354,6 +355,7 @@ body{
         position: absolute;
         top: 30px;
         right: 25px;
+        cursor: pointer;
     }
 
     .navlinks{
@@ -499,8 +501,8 @@ body{
         flex-direction: column;
     }
     
-    .footer-img{
-        margin: 0;
+    .footer-img {
+        margin-left: 10px;
     }
 
     .wolf{

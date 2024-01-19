@@ -50,40 +50,42 @@ body{
 
 }
 
-.mobile img{
+.smallscreen{
     display: none;
 }
 
-
-.profile-image-wrapper img{
-    width:80%;
-    margin-left: 40px;
-    border-radius: 340px;
-    box-shadow: 3px 2px 5px 2px;
+.largescreen{
+    width: 155%;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
-.profile-image-wrapper img:hover{
+.rightside{
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 90px;
+}
+
+.largescreen:hover{
     position: relative;
     bottom:5px;
 }
 
 .profile-content-wrapper{
-    margin-left:40px;
-    margin-right: 40px;
     line-height: 30px;
     text-align: justify;
     color: white;
     font-size: medium;
+    display: flex;
 }
 
 .profile-content-wrapper h1{
     color:white;
     font-size: x-large;
-    text-transform: uppercase;
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
     body{
         font-size: medium;
         background-image: url(/image/the\ dark.jpg);
@@ -91,35 +93,38 @@ body{
         background-position: top;
     }
 
-    .two-column-wrapper{
-        display:block;
-        text-align: justify;
-    }
-    
     .nav-wrapper{
         padding: 0;
     }
 
-    .mobile img{
-        display: block;
-        width:100%;
-        margin-top: 20px;
-        margin-left: -10px;
-        border-radius: 150px;
-    }
-    
-    .mobile{
-        padding: -50px;
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-between;
-    }
-
     .profile-content-wrapper{
+        line-height: 30px;
+        text-align: justify;
+        color: white;
+        font-size: medium;
         font-size: medium;
         margin: 20px;
+        /* display: inline; */
     }
 
-    .profile-image-wrapper img{
+    .rightside{
+        margin: 0;
+    }
+
+
+    .smallscreen{
+        display: block;
+        width:40%;
+        float: left;
+        margin-left: -10px;
+    }
+
+    .smallscreen:hover{
+        position: relative;
+        bottom:5px;
+    }
+
+    .largescreen{
         display: none;
+    }
 }
