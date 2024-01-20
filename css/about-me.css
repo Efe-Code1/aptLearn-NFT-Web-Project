@@ -81,7 +81,7 @@ body{
 
 .profile-content-wrapper h1{
     color:white;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 
@@ -109,16 +109,29 @@ body{
         margin: 0;
     }
 
+    .rightside h1{
+        font-size: large;
+    }
+
     .smallscreen{
         display: block;
-        width:40%;
+        width:30%;
         float: left;
+        margin-top: -10px;
         margin-left: -10px;
     }
 
     .smallscreen:hover{
         position: relative;
         bottom:5px;
+    }
+
+    .head{
+        margin-left: 10px;
+    }
+
+    .para{
+        margin-left: 10px;
     }
 
     .largescreen{
