@@ -101,7 +101,7 @@ body{
         line-height: 2rem;
         text-align: justify;
         color: white;
-        font-size: 12px;
+        font-size: 15px;
         margin: 20px;
     }
 
@@ -110,7 +110,7 @@ body{
     }
 
     .rightside h1{
-        font-size: large;
+        font-size: x-large;
     }
 
     .smallscreen{
